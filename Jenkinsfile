@@ -62,7 +62,7 @@ pipeline {
    // For different use cases, one may not want to clear all this data so it doesn't have to be pulled again for each build.
    post {
        always {
-       sh 'docker system prune -a'
+       sh 'docker system prune -a -y'
      }
    }
  }
